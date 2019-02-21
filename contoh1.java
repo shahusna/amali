@@ -6,36 +6,35 @@
 
 /**
  *
- * @author pc 11
+ * @author pc12
  */
 import java.util.Scanner;
 public class contoh1 {
-    public static void main (String[] input){
-        int i, j;
-        String temp;
-        Scanner scan = new Scanner(System.in);
-        String nama[] = new String[7];
-        System.out.print("Taipkan 7 nama rakan anda : ");
-        for(i=0; i<7; i++){
-            nama[i] = scan.nextLine();
- 
-        }
-        
-        System.out.println("\nSusunan nama yang dimasukkan tadi dalam susunan A-Z...\n");
-        for(i=0; i<5; i++){
-            for(j=1; j<5; j++){
-            if(nama[j-1].compareTo(nama[j])>0){
-                temp=nama[j-1];
-                nama[j-1]=nama[j];
-                nama[j]=temp;
-            }
-        }          
-    }
-    System.out.print("susunan nama dalam susunan A-Z telah berjaya..!!");
-    System.out.println("\nSusunannya adalah :\n");
-    for(i=0;i<5;i++){
-    System.out.println(nama[i]);
-}
-    
-}
+   public static void main(String[] input){
+       int i, j;
+       String temp;
+       Scanner scan = new Scanner(System.in);
+       String nama[] = new String[8];
+       System.out.print("Taipkan 8 nama rakan anda : ");
+       for(i=0; i<8; i++){
+           nama[i] = scan.nextLine();
+       }
+       
+       System.out.println("\nSusunan nama yang dimasukkan tadi dalam susunan A-Z...\n");
+       for(i=0; i<5; i++){
+           for(j=1; j<5; j++){
+               if(nama[j-1].compareTo(nama[j])>0){
+                   temp=nama[j-1];
+                   nama[j-1]=nama[j];
+                   nama[j]=temp;
+               }
+           }
+       }
+       
+       System.out.println("Susunan nama dalam susunan A-Z telah berjaya..!!");
+       System.out.println("\nSusunannya adalah :\n");
+          for(i=0;i<5;i++){
+              System.out.println(nama[i]);
+          }
+   } 
 }
